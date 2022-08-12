@@ -302,8 +302,10 @@ nav,
 
 .banner {
     padding: 230px 0 35px 0;
-    background-image: url("../images/slide01.jpg");
-    z-index: -1;
+    background: url("../images/slide01.jpg") rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .banner-description {
@@ -373,6 +375,7 @@ nav,
 
 .learn {
     width: 47%;
+    padding-bottom: 41px;
     display: flex;
     background-color: #fff;
     flex-direction: column;
@@ -429,8 +432,11 @@ nav,
 
 .maximus {
     padding: 90px 0 82px 0;
-    background-image: url(../images/bg.jpg);
+    background: url(../images/bg.jpg)rgba(0, 0, 0, 0.8);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 
@@ -483,8 +489,8 @@ nav,
 }
 
 .gallery-item {
-    width: 47%;
-    padding: 14px 0;
+    width: 43%;
+    padding: 14px;
     margin: 30px 0;
     display: flex;
     justify-content: center;
@@ -493,11 +499,11 @@ nav,
 }
 
 .gallery-item:nth-child(odd) {
-    margin-right: 5%;
+    margin-right: 4%;
 }
 
 .gallery-item figure {
-    width: 94%;
+    width: 100%;
 }
 
 
@@ -647,6 +653,12 @@ footer {
         width: 100%;
         text-align: center;
     }
+    .gallery-item:nth-child(odd) {
+        margin-right: 2%;
+    }
+    .maximus-title {
+        width: 80%;
+    }
 }
 
 
@@ -678,5 +690,35 @@ footer {
     }
     .menu {
         padding-left: 0;
+    }
+    .learn-description {
+        text-align: center;
+    }
+    .gallery-title {
+        width: 80%;
+    }
+    .maximus-title {
+        width: 90%;
+    }
+}
+
+
+/*media query for 425px starts here*/
+
+@media only screen and (max-width: 425px) {
+    .information {
+        padding: 20px 0;
+    }
+    .learn {
+        width: 95%;
+    }
+    .gallery-item {
+        width: 95%;
+    }
+    .gallery-title {
+        width: 100%;
+    }
+    .maximus-title {
+        width: 100%;
     }
 }
