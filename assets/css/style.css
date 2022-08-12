@@ -260,8 +260,8 @@ nav,
 }
 
 .logo span:nth-last-child(1) {
-    text-transform: uppercase;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .nav-item:nth-child(2) {
@@ -313,6 +313,10 @@ nav,
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.banner-description span {
+    color: #fff;
 }
 
 .banner-title {
@@ -451,7 +455,7 @@ nav,
     padding: 10px 0;
     border-top: 1px solid #fff;
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -507,7 +511,7 @@ nav,
 =================================*/
 
 footer {
-    padding: 61px;
+    padding: 67px 0 61px 0;
     background-color: #000;
 }
 
@@ -560,7 +564,8 @@ footer {
 .copyright {
     padding-top: 40px;
     color: #656565;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .link a:hover::before {
